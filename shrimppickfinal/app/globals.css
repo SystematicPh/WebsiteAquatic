@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sand text-ink font-body antialiased;
+  background:
+    radial-gradient(circle at top left, rgba(95, 143, 81, 0.18), transparent 34rem),
+    linear-gradient(180deg, #dfeeda 0%, #f8fbf3 44%, #eef6e8 100%);
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+.shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-[22px] border border-white/70 bg-foam/90 shadow-soft backdrop-blur;
+}
+
+.section-title {
+  @apply font-display text-3xl font-bold text-ink sm:text-4xl;
+}
+
+.section-copy {
+  @apply max-w-2xl text-sm leading-7 text-ink/70 sm:text-base;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-coral px-5 py-3 text-sm font-bold text-white shadow-lg shadow-seaweed/20 transition hover:-translate-y-0.5 hover:bg-seaweed;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-seaweed/15 bg-white/90 px-5 py-3 text-sm font-bold text-ink transition hover:-translate-y-0.5 hover:border-seaweed/40 hover:text-seaweed;
+}
+
+.input {
+  @apply w-full rounded-full border border-seaweed/10 bg-white px-4 py-3 text-sm text-ink outline-none ring-0 transition placeholder:text-ink/35 focus:border-seaweed focus:shadow-[0_0_0_4px_rgba(63,127,47,0.12)];
+}
+
+.label {
+  @apply text-sm font-medium text-ink/80;
+}
+
+.status-pill {
+  @apply inline-flex rounded-full px-3 py-1 text-xs font-semibold;
+}
