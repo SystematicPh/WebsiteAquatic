@@ -20,7 +20,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
           <div className="shell flex h-20 items-center justify-between gap-4 rounded-full border border-white/70 bg-white/85 px-5 shadow-soft backdrop-blur">
             <Link href="/" className="flex items-center gap-3">
               <div className="relative h-11 w-11 overflow-hidden rounded-full bg-white shadow-lg shadow-seaweed/20">
-                <Image src="/aquanation-logo.svg" alt="AquaNation SHOP logo" fill className="object-cover" priority />
+                <Image src="/aquanation-logo.png" alt="AquaNation SHOP logo" fill className="object-cover" priority />
               </div>
               <div>
                 <p className="font-display text-2xl font-bold leading-none text-seaweed">AquaNation SHOP</p>
